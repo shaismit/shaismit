@@ -1,7 +1,11 @@
 #!/bin/bash
 #add fix to exercise2 here
 
-#Remove wrong DNS translation
+#After checking again ... I found the host file a wrong DNS transaltion : 
+#cat /etc/hosts
+#On of the rows includes : 
+#127.0.0.1 www.ascii-art.de
+#So we need to remove wrong DNS translation
 sudo sed -i 's/127.0.0.1 www.ascii-art.de//g' /etc/hosts
 
 #I "curled" the site without using the "www".
