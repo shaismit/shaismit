@@ -9,3 +9,7 @@ echo "curl -o 007.txt http://ascii-art.de/ascii/ab/007.txt" >  exercise2-fix.sh
 
 #Change the exercise2-fix.sh file to executable file
 sudo chmod +x exercise2-fix.sh
+
+
+#Running the execute file 
+ ~/./exercise1-fix.sh
