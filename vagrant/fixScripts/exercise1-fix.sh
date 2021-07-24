@@ -16,4 +16,4 @@ echo "curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt" >  exercis
 sudo chmod +x exercise1-fix.sh
 
 #Running the execute file 
- ~/./exercise1-fix.sh
+#/home/vagrant/./exercise1-fix.sh
