@@ -5,7 +5,7 @@
 #curl command is using as a tool to transfer data to or from a server
 
 #This right command should be : 
-sudo curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
+curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
 
 #I created a script that will enable to run the the command manual in server1 
 
