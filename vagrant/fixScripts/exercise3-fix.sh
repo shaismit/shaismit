@@ -6,13 +6,13 @@
 sudo sed -i "s/denied/granted/g" /etc/apache2/sites-available/000-default.conf
 
 #Changing the message from "Hello world" to "Hello OpsSchool"
-sudo sed -i "s/Hello world/Hello OpsSchool/g" /var/www/html/index.html
+sudo sed -i "s/Hello world/Hello from OpsSchool/g" /var/www/html/index.html
 
 #Reset the Apache service that it'll take effect
 sudo systemctl restart apache2
 
 #Doing the same but inserting all the command into "exercise3-fix.sh" file for running is manual 
 echo "sudo sed -i \"s/denied/granted/g\" /etc/apache2/sites-available/000-default.conf" >  exercise3-fix.sh
-echo "sudo sed -i \"s/Hello world/Hello OpsSchool/g\" /var/www/html/index.html" >>  exercise3-fix.sh
+echo "sudo sed -i \"s/Hello world/Hello from OpsSchool/g\" /var/www/html/index.html" >>  exercise3-fix.sh
 echo "sudo systemctl restart apache2" >>  exercise3-fix.sh
 sudo chmod +x exercise3-fix.sh
