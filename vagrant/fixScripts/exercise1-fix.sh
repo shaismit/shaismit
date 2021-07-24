@@ -11,7 +11,7 @@
 #Pinging www.textfiles.com [208.86.224.90]
 #And understand there something wrong with the routing table 
 #Then I remove the wrong route by using the command : 
-sudo route del -host www.textfiles.com
+sudo ip route del 208.86.224.90
 
 #This right command should be : 
 curl bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
