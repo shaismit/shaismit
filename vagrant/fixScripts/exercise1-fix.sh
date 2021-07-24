@@ -1,6 +1,6 @@
 #!/bin/bash
 #add fix to exercise1 here
-curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
+#sudo curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
 
 #I created a script that will enable to run the the command manual in server1 
 #curl is a command line tool to transfer data to or from a server, using any of the supported protocols
@@ -12,3 +12,6 @@ echo "curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt" >  exercis
 
 #I also add to the sh file executable option 
 sudo chmod +x exercise1-fix.sh
+
+#Running the execute file 
+ ~/./exercise1-fix.sh
