@@ -12,7 +12,7 @@ curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt
 #The "-o" display the process & make a local copy of bnbascii.txt
 echo "curl -o bnbascii.txt http://www.textfiles.com/art/bnbascii.txt" >  exercise1-fix.sh
 
-#I also add to the sh file executable option 
+#Change the exercise1-fix.sh file to executable file
 sudo chmod +x exercise1-fix.sh
 
 #Running the execute file 
