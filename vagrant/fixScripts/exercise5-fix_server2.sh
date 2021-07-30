@@ -15,3 +15,5 @@ sudo -H -u vagrant bash -c 'echo -e "\n" | ssh-keygen -q -N "" '
 
 #In server2 adding the public key
 curl http://192.168.100.10/pubkey.txt >> /home/vagrant/.ssh/authorized_keys
+
+#Now server1 can connect to server2 without host key checking
