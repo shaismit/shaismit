@@ -56,7 +56,7 @@ if [ "$#" -lt 2 ];
 
 
 		#Make the copy operation to the destination server by using scp
-		scp -v "$arr" "$destSrv":"$destPath" &> /home/vagrant/logEx6.txt
+		scp -v $arr "$destSrv":"$destPath" &> /home/vagrant/logEx6.txt
 
 		#Output the total bytes that copied and and saving that in the last line as it should be
 		grep "Transferred: sent" /home/vagrant/logEx6.txt | tail -n 2 | awk '{print $3}' | sed "s/[^0-9]*//g"
