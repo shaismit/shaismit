@@ -5,8 +5,8 @@
 #and we want that server2 will be able to communicate via ssh to server1
 #we have to copy public key from server2 to server1
 
-scp -r vagrant@192.168.100.11:~/.ssh/id_rsa.pub /home/vagrant/server2key.pub
-cat server2key.pub >> .ssh/authorized_keys
+#scp -r vagrant@192.168.100.11:~/.ssh/id_rsa.pub /home/vagrant/server2key.pub
+#cat server2key.pub >> .ssh/authorized_keys
 
 #START
 
