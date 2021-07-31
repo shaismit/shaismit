@@ -41,25 +41,24 @@ if [ "$#" -lt 2 ];
                 echo
 
 
-				#Read from the user the destination path folder of the server we would like to make the copy
-				destPath="${@: -1}"
-				echo $destPath
-				echo
+		#Read from the user the destination path folder of the server we would like to make the copy
+		destPath="${@: -1}"
+		echo $destPath
+		echo
 
-				#Remove the last argument that present the destination path
-				lenCut=$(($#-1))
+		#Remove the last argument that present the destination path
+		lenCut=$(($#-1))
 
-				arr=${@:1:$lenCut}
+		arr=${@:1:$lenCut}
+		echo $arr
 
-				echo $arr
-
-				#read a
+		#read a
 
 
-				#Make the copy operation to the destination server by using scp
-				scp -v "$arr" "$destSrv":"$destPath" &> /home/vagrant/logEx6.txt
+		#Make the copy operation to the destination server by using scp
+		scp -v "$arr" "$destSrv":"$destPath" &> /home/vagrant/logEx6.txt
 
-				#Output the total bytes that copied and and saving that in the last line as it should be
-				grep "Transferred: sent" /home/vagrant/logEx6.txt | tail -n 2 | awk '{print $3}' | sed "s/[^0-9]*//g"
+		#Output the total bytes that copied and and saving that in the last line as it should be
+		grep "Transferred: sent" /home/vagrant/logEx6.txt | tail -n 2 | awk '{print $3}' | sed "s/[^0-9]*//g"
 fi
 #end if
